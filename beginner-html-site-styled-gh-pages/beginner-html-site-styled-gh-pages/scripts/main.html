@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>hello world this the use of calculation in js</p>
+    <div id="calc"></div>
+</body>
+<script>
+    let numb1 = 10;
+    let numb2 = 4;
+    let sum = `the sum is: ${numb1 + numb2}`
+    let sub = `the sub is:${numb1 - numb2}`;
+    let mult = `the mult is:  ${numb1 * numb2}`;
+    let div = `the div is: ${numb1 / numb2}`;
+    let mod = `the mod is: ${numb1 % numb2}`;
+    let result = `${sum}\n${sub}\n${mult}\n${div}\n${mod}`
+    console.log(`${sum}\n
+    ${sub}\n
+    ${mult}\n
+    ${div}\n
+    ${mod}`)
+    document.getElementById("calc").innerHTML = result;
+
+</script>
+
+</html>
