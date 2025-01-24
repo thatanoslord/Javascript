@@ -11,8 +11,15 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+
+    if (done === count) {
+        continueLoop = false;
+    }
 }
 
 let result = ""
@@ -20,5 +27,5 @@ let result = ""
 for (const row of rows) {
     result = result + row + "\n";
 }
-// this a new comment
+
 console.log(result);
