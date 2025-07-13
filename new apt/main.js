@@ -11,3 +11,27 @@ console.error('test');
 // N.B you can either use window or not it is your choice to 
 // JavaScript has a process called automatic semicolon insertion which means after every function the compiler will add a semicolon to your code but does it mean I don't need to write semi colon after myfunction??
 // No and biiiig no because if I compressed my code it all of it will be in one line and thats gonna make a mess
+
+/*
+ types of data ins Java script:
+-String is a bunch of character and we write the between either single quote or double quoation '' or "",
+-Number: is a number in js every number is number even decimals be aware that if u put a number betweeen "" it will be cosidered as a string
+-boolean which is true or false 
+-Null its type is Null but the browser will show u its type as object but js doesnt consider it as an object
+-undefined is when a variable doesnt have a value 
+*/
+document.write(typeof"Hello");
+document.write(typeof 1);
+document.write(typeof"1");
+document.write(typeof true);
+document.write(typeof null);
+let x;
+document.write(typeof x);
+
+
+
+
+
+
+
+
