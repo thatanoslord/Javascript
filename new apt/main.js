@@ -33,7 +33,16 @@ a variable is a space given to var in a memory
 we declare a variable by using either (var, let or const)
 var and let has the same features 
 but const is used to give a value for variables that aren't going to be changed in the future
+*/
 
+// concatenation is when you want to add to data types into each other there is two ways to do concatenation first one by using "+" second one is by using back tick ``
+
+let f_name = "Moussa";
+let l_name = "Sabbar";
+let age = 27;
+
+console.log("My name is" + f_name + " " + l_name + "and I am " + age)
+console.log(`My name is ${f_name} ${l_name} and I am ${age}`)
 
 
 
