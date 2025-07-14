@@ -84,3 +84,13 @@ console.log(  -undefined); // this will turn the undefined into a number which i
 console.log(  +true); // this will turn the string into a number because true is 1 and false is 0
 console.log(  +false); // this will turn the string into a number because true is 1 and false is 0
 
+// also there is another way to turn a string into a number by using the Number() function or parseInt() or parseFloat() functions
+// the difference between Number and parseInt is if the string has characters in it Number will return NaN but parseInt will return the number before the character
+// but still parseInt will not work if the string start with a character or with decimals it will return the number before the decimal point
+// thats why we have parseFloat() so the string will trun into decimal
+
+console.log(Number("4"))
+console.log(Number("4 str"))
+console.log(parseInt("4 str"))
+console.log(parseInt(" another str 4.5 str"))
+console.log(parseFloat("4.5 "))
