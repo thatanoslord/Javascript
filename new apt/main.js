@@ -70,6 +70,17 @@ console.log(num);
 num **= 2;
 console.log(num);
 
-
-
+// In javascript you can turn a string into a number by using using either maths signs or by adding a math sign before the string
+ let str = "10";
+console.log(str + "10"); // this will concatenate the string with the number
+console.log(str - "10"); // this will turn the string into a number and then subtract it
+console.log(str * "10"); // this will turn the string into a number and then multiply it
+console.log(str / "10"); // this will turn the string into a number and then divide 
+// but if you want to turn a string into without making calculations you can use the sign before the string
+console.log( typeof +str); // this will turn the string into a number
+console.log( typeof -str); // this will turn the string into a number
+console.log(  -null); // this will turn the null into a number which is 0
+console.log(  -undefined); // this will turn the undefined into a number which is NaN (Not a Number)
+console.log(  +true); // this will turn the string into a number because true is 1 and false is 0
+console.log(  +false); // this will turn the string into a number because true is 1 and false is 0
 
