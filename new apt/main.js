@@ -89,8 +89,27 @@ console.log(  +false); // this will turn the string into a number because true i
 // but still parseInt will not work if the string start with a character or with decimals it will return the number before the decimal point
 // thats why we have parseFloat() so the string will trun into decimal
 
-console.log(Number("4"))
-console.log(Number("4 str"))
-console.log(parseInt("4 str"))
-console.log(parseInt(" another str 4.5 str"))
-console.log(parseFloat("4.5 "))
+console.log(Number("4"));
+console.log(Number("4 str"));
+console.log(parseInt("4 str"));
+console.log(parseInt(" another str 4.5 str"));
+console.log(parseFloat("4.5 "));
+
+//Number is a objject that has many methods in it such isNaN(), Maxvalue, minvalue, issafeinteger(), isInteger()..
+// isNaN() is a function that checks if the value is NaN or not
+console.log(Number.isNaN("4 str"));
+console.log(Number.isNaN("4 str" - 6)); // this will return false because the string will be converted to a number and then subtracted
+
+// Maxvalue and minvalue are the maximum and minimum values that a number can have in javascript
+console.log(Number.MAX_VALUE); // this will return the maximum value that a number can have in javascript
+console.log(Number.MIN_VALUE); // this will return the minimum value that a number can have in
+
+//maxsafeinteger and minsafeinteger are the maximum and minimum safe integers that a number can have in javascript
+console.log(Number.MAX_SAFE_INTEGER); // this will return the maximum safe integer that a number can
+console.log(Number.MIN_SAFE_INTEGER); // this will return the minimum safe integer that a number can have in javascript
+
+//issafeinteger() is a function that checks if the number is a safe integer or not
+console.log(Number.isSafeInteger(34567890854567)); // this will return false because 34567890854567 is not a safe integer
+
+//issafeinteger() is a function that checks if the number is an integer or not
+console.log(Number.isInteger(1667888908765)); // this will return true because 1667888908765 is an integer
