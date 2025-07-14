@@ -44,9 +44,31 @@ let age = 27;
 console.log("My name is" + f_name + " " + l_name + "and I am " + age)
 console.log(`My name is ${f_name} ${l_name} and I am ${age}`)
 
+// calculation = maths we have addition + , subtraction - , myltiplication * , devide / , moderation %,  exponentiation **
+// NB: addition sign can be used to concatenate or to make addition but the others can not:
+let numb1 =10;
+let numb2 =2
+console.log(numb1 + numb2);
+console.log(numb1 - numb2);
+console.log(numb1 * numb2);
+console.log(numb1 / numb2);
+console.log(numb1 % numb2);
+console.log(numb1 ** numb2);
+// there is a way to make it easier:
+let num = 10;
 
-
-
+num += 2;
+console.log(num);
+num -= 2;
+console.log(num);
+num *= 2;
+console.log(num);
+num /= 2;
+console.log(num);
+num %= 2;
+console.log(num);
+num **= 2;
+console.log(num);
 
 
 
