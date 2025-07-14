@@ -28,6 +28,13 @@ document.write(typeof null);
 let x;
 document.write(typeof x);
 
+/*
+a variable is a space given to var in a memory 
+we declare a variable by using either (var, let or const)
+var and let has the same features 
+but const is used to give a value for variables that aren't going to be changed in the future
+
+
 
 
 
