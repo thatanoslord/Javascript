@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trying</title>
+</head>
+<body>
+<h1>Welcome to the Zakah Calculator</h1>
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="zakah">Zakah Amount:</label>
+    <input type="number" id="zakah" name="zakah" required><br><br>
+    
+    <input type="submit" value="Calculate">
+</form>
+<script>
+//     let name = prompt("Please enter your name:");
+//    let zakah = prompt("please enter your zakah amount:");
+//    console.log(`Hello ${name}, your zakah amount is ${zakah * 0.025}.`);
+let name = document.getElementById("name");
+let zakah = document.getElementById("zakah");
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let zakahAmount = parseFloat(zakah.value);
+    if (isNaN(zakahAmount) || zakahAmount < 0) {
+        alert("Please enter a valid zakah amount.");
+        return;
+    }
+    let calculatedZakah = zakahAmount * 0.025;
+    alert(`Hello ${name.value}, your zakah amount is ${calculatedZakah}.`);
+});
+</script>
+</body>
+
+</html>
