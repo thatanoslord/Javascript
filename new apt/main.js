@@ -120,3 +120,39 @@ let num2 = 20;
 console.log(typeof String(numb1)); // this will return a string
 console.log(typeof num1.toString()); // this will return a string
 
+//string is a sequence value of characters and it has many methods such as:
+//repeat() which repeats the string a certain number of times
+let str1 = "Hello";
+console.log(str1.repeat(3)); // this will return HelloHelloHello
+
+//length() which returns the length of the string
+console.log(str1.length); // this will return 5
+
+//access for this we use indexing which used by the square brackets []
+// the first character is at index 0 and the last character is at index length -
+console.log(str1[0]); // this will return H
+console.log(str1[str1.length - 1]); // this will return o
+
+//searching in a string we have three methods indexOf(), lastIndexOf() and charAt()
+// indexOf(character, where to start) returns the index of the first occurrence of the string 
+console.log(str1.indexOf("l")); // this will return 2
+console.log(str1.indexOf("l", 3)); // this will return 3 because it will start searching from index 3
+// lastIndexOf(character, where to start) returns the index of the last occurrence of the string
+console.log(str1.lastIndexOf("l")); // this will return 3
+console.log(str1.lastIndexOf("l", 2)); // this will return 2 because it will start searching from index 2
+// charAt(index) returns the character at the specified index
+console.log(str1.charAt(0)); // this will return H  
+console.log(str1.charAt(str1.length - 1)); // this will return o
+//the difference between charAt() and indexing is that charAt() will return an empty string if the index is out of range but indexing will return undefined
+
+//slicing is a method that returns a part of the string
+// slice(start, end) returns the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
+console.log(str1.slice(0, 3)); // this will return Hello
+console.log(str1.slice(2, 4)); // this will return ll
+
+// spliting is a method that splits the string into an array of strings
+// split(separator, limit) returns an array of strings that are separated by the separator
+let str2 ="Moussa Ahmed Ayoub Rachid Hassan";
+console.log(str2.split(" ")); // this will return an array of strings that are separated by the space
+console.log(str2.split(" ", 2)); // this will return only two values which are ["Moussa", "Ahmed"]
+console.log(str2.split("")); // this will return an array of strings that are separated by the empty string which means it will return each character as a string
