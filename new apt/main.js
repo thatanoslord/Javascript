@@ -145,6 +145,19 @@ console.log(str1.charAt(0)); // this will return H
 console.log(str1.charAt(str1.length - 1)); // this will return o
 //the difference between charAt() and indexing is that charAt() will return an empty string if the index is out of range but indexing will return undefined
 
+//Also there is other ways to search in a string such as includes() and startsWith() and endsWith()
+// includes(character, where to start) returns true if the string contains the character and false if
+ console.log(str1.includes("l")); // this will return true
+console.log(str1.includes("l", 3)); // this will return false because it will start searching from index 3
+// startsWith(character, where to start) returns true if the string starts with the character and
+console.log(str1.startsWith("H")); // this will return true
+console.log(str1.startsWith("H", 1)); // this will return false because it
+//endsWith(character, where to start) returns true if the string ends with the character and false if not
+console.log(str1.endsWith("o")); // this will return true
+console.log(str1.endsWith("o", 4)); // this will return false because it
+
+
+
 //slicing is a method that returns a part of the string
 // slice(start, end) returns the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
 console.log(str1.slice(0, 3)); // this will return Hello
