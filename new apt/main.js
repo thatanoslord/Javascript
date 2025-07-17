@@ -149,6 +149,12 @@ console.log(str1.charAt(str1.length - 1)); // this will return o
 // slice(start, end) returns the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
 console.log(str1.slice(0, 3)); // this will return Hello
 console.log(str1.slice(2, 4)); // this will return ll
+//Nb for slicing we also have substring(start, end) which is similar to slice but it doesn't accept negative values and it will return the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
+// and substr(start, length) which is similar to slice but it accepts negative values and it will return the part of the string from start to start + length (length is included) which means if I write 3 at the end it will return the index 2
+console.log(str1.substring(0, 3)); // this will return Hello
+console.log(str1.substring(-1, -3)); // this will return nothing because substring doesn't accept negative values
+console.log(str1.substr(0, 3)); // this will return Hello
+console.log(str1.substr(-3, 2)); // this will return ll because it will start from the end of the string and return the next two characters
 
 // spliting is a method that splits the string into an array of strings
 // split(separator, limit) returns an array of strings that are separated by the separator
