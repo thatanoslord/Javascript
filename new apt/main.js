@@ -113,3 +113,10 @@ console.log(Number.isSafeInteger(34567890854567)); // this will return false bec
 
 //issafeinteger() is a function that checks if the number is an integer or not
 console.log(Number.isInteger(1667888908765)); // this will return true because 1667888908765 is an integer
+
+//in order to tur a number into a string you have two ways to do it the first one is by using the object string() or by using the toString() method
+let num1 = 10;
+let num2 = 20;
+console.log(typeof String(numb1)); // this will return a string
+console.log(typeof num1.toString()); // this will return a string
+
