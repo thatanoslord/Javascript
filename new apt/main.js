@@ -175,3 +175,24 @@ let str2 ="Moussa Ahmed Ayoub Rachid Hassan";
 console.log(str2.split(" ")); // this will return an array of strings that are separated by the space
 console.log(str2.split(" ", 2)); // this will return only two values which are ["Moussa", "Ahmed"]
 console.log(str2.split("")); // this will return an array of strings that are separated by the empty string which means it will return each character as a string
+
+
+
+/* arrays is a collection of values that are stored in a single variable
+we can create an array by using the array constructor or by using the array literal notation
+*/
+ let arr1 = ["hassan", "moussa", "ayoub", "rachid", ["ahmed", "salah", "mohamed", [1, 2, 3]]];
+console.log(arr1); // this will return the array
+// we can access the values of the array by using the index of the value
+console.log(arr1[0]); // this will return hassan
+console.log(arr1[4][0]); // this will return ahmed
+console.log(arr1[4][3][0]); // this will return 1
+// we can also use the length property to get the length of the array
+console.log(arr1.length); // this will return 5
+console.log(arr1[4].length); // this will return 4
+console.log(arr1[4][3].length); // this will return 3   
+//we can also replace the value of the array by using the index of the value
+// for example I want arr1[4][1] to be changed from salah to "Yahya"
+//arr1[4][1] = "Yahya";
+arr1[4][1] = "Yahya";
+console.log(arr1[4][1]);
