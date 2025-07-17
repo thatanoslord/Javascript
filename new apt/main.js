@@ -196,3 +196,20 @@ console.log(arr1[4][3].length); // this will return 3
 //arr1[4][1] = "Yahya";
 arr1[4][1] = "Yahya";
 console.log(arr1[4][1]);
+
+// we can also add values to the array by using the push() method or unshift() method
+// push() method adds the value to the end of the array
+let arr2 = ["hassan", "moussa", "ayoub", "rachid"];
+arr2.push("ahmed");
+console.log(arr2); // this will return ["hassan", "moussa", "ayoub", "rachid", "ahmed"]
+// unshift() method adds the value to the beginning of the array
+arr2.unshift("salah");
+console.log(arr2); // this will return ["salah", "hassan", "moussa", "ayoub", "rachid", "ahmed"]
+// we can also remove values from the array by using the pop() method or shift() method
+// pop() method removes the value from the end of the array 
+arr2.pop();
+console.log(arr2); // this will return ["salah", "hassan", "moussa", "ayoub", "rachid"]
+// shift() method removes the value from the beginning of the array
+arr2.shift();
+console.log(arr2); // this will return ["hassan", "moussa", "ayoub", "rachid"]
+
