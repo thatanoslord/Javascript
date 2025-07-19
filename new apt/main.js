@@ -213,3 +213,12 @@ console.log(arr2); // this will return ["salah", "hassan", "moussa", "ayoub", "r
 arr2.shift();
 console.log(arr2); // this will return ["hassan", "moussa", "ayoub", "rachid"]
 
+// slice and splice are two methods that are used to manipulate arrays
+// slice(start, end, ) returns a part of the array from start to end (end is not included)
+console.log(arr2.slice(0, 2)); // this will return ["hassan", "moussa"]
+
+// splice(start, deleteCount, item1, item2, ...) removes the values from the array starting from start and removes deleteCount values and adds item1, item2, ... to the array
+//  N.B: splice will change the original array and also it is considered as the most powerful method in arrays
+// deleteCount is the number of values to be removed from the array you if you don't want to remove any values you can put 0
+console.log(arr2.splice(0, 2, "ahmed", "salah")); // this will remove the first two values from the array and add "ahmed" and "salah" to the array
+console.log(arr2); // this will return ["ahmed", "salah", "ayoub", "rachid"]
