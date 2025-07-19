@@ -242,3 +242,15 @@ console.log(arr3); // this will return [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //reverse() method will reverse the order of the array and also it will change the original array
 console.log(arr3.reverse()); // this will return [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+//there is 2 ways to concat two arrays or more the first one is by using + but this will not change the original arrays it will create a new array and its type is going to be a string 
+let arr4 = ["hassan", "moussa", "ayoub"];
+let arr5 = ["rachid", "ahmed", "salah"];
+arr5 += arr4; // this will return "rachid,ahmed,salah,hassan,moussa,ayoub"
+console.log(arr5); // this will return "rachid,ahmed,salah,hassan,moussa,ayoub"
+// the second one is by using the concat() method which will change the original array and it will return a new array
+console.log(arr5.concat(arr4)); // this will return ["rachid", "ahmed", "salah", "hassan", "moussa", "ayoub"]
+
+// the difference between the two methods is that the first one will return a string and the second one will return an array
+// also there is a method called join() which will join the array into a string and you can also change the separator
+console.log(arr5.join(" - ")); // this will return "rachid - ahmed - salah - hassan - moussa - ayoub"
