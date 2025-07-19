@@ -24,7 +24,7 @@ document.write(typeof"Hello");
 document.write(typeof 1);
 document.write(typeof"1");
 document.write(typeof true);
-document.write(typeof null);
+document.write(typeof null); 
 let x;
 document.write(typeof x);
 
@@ -160,8 +160,8 @@ console.log(str1.endsWith("o", 4)); // this will return false because it
 
 //slicing is a method that returns a part of the string
 // slice(start, end) returns the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
-console.log(str1.slice(0, 3)); // this will return Hello
-console.log(str1.slice(2, 4)); // this will return ll
+console.log(str1.slice(0, 3)); // this will return Hel
+console.log(str1.slice(2, 4)); // this will return l
 //Nb for slicing we also have substring(start, end) which is similar to slice but it doesn't accept negative values and it will return the part of the string from start to end (end is not included) which means if I write 3 at the end it will return the index 2
 // and substr(start, length) which is similar to slice but it accepts negative values and it will return the part of the string from start to start + length (length is included) which means if I write 3 at the end it will return the index 2
 console.log(str1.substring(0, 3)); // this will return Hello
