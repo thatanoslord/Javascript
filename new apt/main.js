@@ -222,3 +222,14 @@ console.log(arr2.slice(0, 2)); // this will return ["hassan", "moussa"]
 // deleteCount is the number of values to be removed from the array you if you don't want to remove any values you can put 0
 console.log(arr2.splice(0, 2, "ahmed", "salah")); // this will remove the first two values from the array and add "ahmed" and "salah" to the array
 console.log(arr2); // this will return ["ahmed", "salah", "ayoub", "rachid"]
+
+//for searching in an array we have three methods indexof, lastindexof and includes they take an item and start (item, start)
+// the first to gives you the index of the first occurrence of the item
+console.log(arr2.indexOf("ayoub")); // this will return 2
+console.log(arr2.indexOf("ayoub", 3)); // this will return -1 because it will start searching from index 3
+console.log(arr2.lastIndexOf("ayoub")); // this will return 2
+console.log(arr2.lastIndexOf("ayoub", 1)); // this will return -1 because it will start searching from index 1
+
+//includes(item, start) returns true if the item is in the array and false if not
+console.log(arr2.includes("ayoub")); // this will return true
+console.log(arr2.includes('fatima'.1)) // this will return false because there is no name such as fatima in the array
