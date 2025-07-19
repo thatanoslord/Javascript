@@ -232,4 +232,13 @@ console.log(arr2.lastIndexOf("ayoub", 1)); // this will return -1 because it wil
 
 //includes(item, start) returns true if the item is in the array and false if not
 console.log(arr2.includes("ayoub")); // this will return true
-console.log(arr2.includes('fatima'.1)) // this will return false because there is no name such as fatima in the array
+console.log(arr2.includes('fatima', 1)) // this will return false because there is no name such as fatima in the array
+
+//sort() method will organize your array in ascending order and also it will change the original array
+// it will sort the array based on the unicode of the characters so if you have numbers in your array it will sort them based on the unicode of the characters
+let arr3 = [1, 2, 4, 5, 7, 6, 8, 9, 3];
+arr3.sort();
+console.log(arr3); // this will return [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//reverse() method will reverse the order of the array and also it will change the original array
+console.log(arr3.reverse()); // this will return [9, 8, 7, 6, 5, 4, 3, 2, 1]
