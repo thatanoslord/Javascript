@@ -1,8 +1,8 @@
-// window is for manipulating the browser this object has all thing such as document or consol
-window.alert('Hello world');
-window.print();
-// when I write document I will create and html document 
-document.write('hello world');
+// // window is for manipulating the browser this object has all thing such as document or consol
+// window.alert('Hello world');
+// window.print();
+// // when I write document I will create and html document 
+// document.write('hello world');
 
 // cosole is and object to controle consoles command such as giving error of trying to know a function does it work or not
 console.log("Hello world");
@@ -253,7 +253,7 @@ console.log(arr5.concat(arr4)); // this will return ["rachid", "ahmed", "salah",
 
 // the difference between the two methods is that the first one will return a string and the second one will return an array
 // also there is a method called join() which will join the array into a string and you can also change the separator
-console.log(arr5.join(" - ")); // this will return "rachid - ahmed - salah - hassan - moussa - ayoub"
+console.log(arr4.join(" - ")); // this will return "rachid - ahmed - salah - hassan - moussa - ayoub"
 
 
 //some usefull methods in js 
@@ -265,4 +265,8 @@ console.log(arr5.join(" - ")); // this will return "rachid - ahmed - salah - has
  let y = 'AYOUB';
  console.log(y.toLowerCase); // the string is going to be lowercased
 
- // we also hav e
+ // we also have trim(method) this will remove space in the beginning and the end of strings 
+ let askemail = prompt().toLowerCase().trim();
+ let email = "sabbarmoussa@gmail.com";
+
+ console.log(email == askemail);
