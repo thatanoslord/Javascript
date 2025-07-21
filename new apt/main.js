@@ -254,3 +254,15 @@ console.log(arr5.concat(arr4)); // this will return ["rachid", "ahmed", "salah",
 // the difference between the two methods is that the first one will return a string and the second one will return an array
 // also there is a method called join() which will join the array into a string and you can also change the separator
 console.log(arr5.join(" - ")); // this will return "rachid - ahmed - salah - hassan - moussa - ayoub"
+
+
+//some usefull methods in js 
+//first one is toUppercase() this will help you it the string was lowercase will be uppercased
+ x = 'moussa'
+ console.log(x.toUpperCase); //this will turn 'moussa' to "MOUSSA"
+
+ //we also have toLowerCase() this will go the opposite of uppercasing 
+ let y = 'AYOUB';
+ console.log(y.toLowerCase); // the string is going to be lowercased
+
+ // we also hav e
