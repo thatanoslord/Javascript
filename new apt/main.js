@@ -280,3 +280,17 @@ console.log(arr4.join(" - ")); // this will return "rachid - ahmed - salah - has
 // but there is another sign wich is " === " this makes it comparing values and data types 
 console.log( a === b); // this will show you false because a's data type is number and b is a string
 console.log(a === 10); // this will show true because they are numbers and they have the same value
+
+// there is also bigger than > and lower than < which give you the ability to compare between two values 
+console.log(a < 10); //this will show false because the values are equale
+console.log(a > 9); // this will show true because a's value is bigger than 9 
+
+// there is also bigger than or equal >= and lower than or equal <= 
+
+console.log(a <= 10); //this will show true  because one the conditions which is = is true 
+console.log(a >= 9); // this will show true because a's value is bigger than 9 
+
+// != this means doesn't equal 
+console.log(a != 9); // this will show true that 10 doesnt equal 9
+console.log(a != 10); // this will show false because a has the same value o  10 
+
