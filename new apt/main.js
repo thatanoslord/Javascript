@@ -294,3 +294,20 @@ console.log(a >= 9); // this will show true because a's value is bigger than 9
 console.log(a != 9); // this will show true that 10 doesnt equal 9
 console.log(a != 10); // this will show false because a has the same value o  10 
 
+
+// there is also some other sign which is and "&&" and or " || "
+
+// && this makes you compare between values if one of them doesn't validate with the condition it gives you false 
+
+let product = "LG_tv";
+let size = 50;
+let price = 6000;
+
+console.log( size == 40 && price >= 6000); // this will show false because only one condition is valide which is >= 6000
+console.log( size == 50 && price >= 6000); // this will show true because the two   condition are valide 
+
+// || this means or 
+
+
+console.log( size == 40 || price >= 60000); // this will show false because  conditions aren't valide 
+console.log( size == 50 || price >= 60000); // this will show true because one  condition is  valide  which is size
