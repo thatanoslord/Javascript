@@ -270,3 +270,13 @@ console.log(arr4.join(" - ")); // this will return "rachid - ahmed - salah - has
  let email = "sabbarmoussa@gmail.com";
 
  console.log(email == askemail);
+
+ //comparing values and datatypes
+ // in order to compare between two or more values, datatypes there are some signs that will lead you to do this 
+ // the first one is ' == ' this gives you the right to ask if "a" == "b" but it works only for values it doesnt care about data types
+ let a = 10;
+ let b = "10";
+ console.log(a == b); // this will show you true even if the data type of variable "b" is string
+// but there is another sign wich is " === " this makes it comparing values and data types 
+console.log( a === b); // this will show you false because a's data type is number and b is a string
+console.log(a === 10); // this will show true because they are numbers and they have the same value
