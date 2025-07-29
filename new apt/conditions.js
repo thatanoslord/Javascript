@@ -29,3 +29,24 @@ else if (role === "user") {
 else{
     document.write("<br> Please! choose your role");
 }
+
+/* another example of condition statement*/
+let grade = prompt("Enter your grade (0-100):");
+if (grade ==100){
+    document.write("<br> Perfect score!");
+}
+else if (grade >= 90) {
+    document.write("<br> Excellent!");
+}
+else if (grade >= 80) {
+    document.write("<br> Very good!");
+} 
+else if (grade >= 70) {
+    document.write("<br> Good!");
+}
+else if (grade >= 50) {
+    document.write("<br> Pass!");
+}
+else{
+    document.write("<br> Fail!");
+}
