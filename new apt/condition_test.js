@@ -1,17 +1,17 @@
 // first exercise
-let num1 = prompt("choose the first number that will be compared");
-let num2 = prompt("choose the second number that will be compared");
-let num3 = prompt("choose the third number that will be compared");
+let num1 = parseFloat(prompt("choose the first number that will be compared"));
+let num2 = parseFloat(prompt("choose the second number that will be compared"));
+let num3 = parseFloat(prompt("choose the third number that will be compared"));
 
-if (num1 > num2 && num1 > num2){
-    document.write(num1 +" is bigger than " + num2 +" and " + num3);
+if (num1 > num2 && num1 > num3){
+    document.write(num1);
 }
 else if (num2 > num1 && num2 > num3){
-    document.write(num1 +" is bigger than " + num2 +" and " + num3);
+    document.write(num2);
 }
 else { 
-document.write(num3 +" is bigger than " + num1 +" and " + num2);
-}
+document.write(num3);
+};
 
 //second exercise
 let username = prompt("username: ");
@@ -25,9 +25,13 @@ else{
 }
 
 // exercise 3
-let letter = prompt("Enter one letter: ").toLowerCase;
+let letter = prompt("Enter one letter: ").toLowerCase();
 switch(letter){
-    case "a" || "e" || "i" || "o" || "u":
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
         document.write("<br>هذا حرف صوتي")
         break;
     default :
@@ -36,7 +40,7 @@ switch(letter){
 };
 
 //exercise 4
-let day = prompt("Enter a day: ").toLowerCase;
+let day = prompt("Enter a day: ").toLowerCase();
 switch(day){
     case "monday":
         document.write("<br>work")
@@ -44,7 +48,7 @@ switch(day){
     case "tuesday":
         document.write("<br>Normal day")
         break;
-    case "wedensday":
+    case "wednesday":
         document.write("<br>Normal day")
         break;
     case "thursday":
@@ -63,15 +67,17 @@ switch(day){
         document.write("<br>Invalid day")
         break;
 };
+
 //exercise 5
-let age = prompt("Enter your age: ");
+let age = parseInt(prompt("Enter your age: "));
+
 if (age < 13){
     document.write("<br>طفل")
 }
 else if (age <= 17){
     document.write("<br>مراهق")
 }
-if (age <= 18){
+else if (age <= 65){
     document.write("<br>راشد")
 }
 else {
