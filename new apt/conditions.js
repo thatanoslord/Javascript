@@ -4,17 +4,17 @@ if (condition){
     code
 }
 */
-let num1 = prompt("choose the first number that will be compared").toLowerCase();
-let num2 = prompt("choose the second number ");
-if (num1 < num2){
-    document.write("number two is bigger than number one")
-}
-else if (num1 > num2){
-    document.write("number one is bigger than number two")
-}
-else{
-    document.write("the two numbers are equal")
-};
+// let num1 = prompt("choose the first number that will be compared").toLowerCase();
+// let num2 = prompt("choose the second number ");
+// if (num1 < num2){
+//     document.write("number two is bigger than number one")
+// }
+// else if (num1 > num2){
+//     document.write("number one is bigger than number two")
+// }
+// else{
+//     document.write("the two numbers are equal")
+// };
 
 let role = prompt("Enter your role (admin/moderator/user):").toLowerCase();
 if (role === "admin") {
@@ -50,3 +50,8 @@ else if (grade >= 50) {
 else{
     document.write("<br> Fail!");
 }
+// another to create a condition statement is by using the symbols ? and : , ? refers to the if statement and : refers to the esle statement
+// also you can write the condition statement in one line or in multiple lines
+let age = prompt("enter your age: ") 
+age >= 18? document.write("<br>you have the access to the website") 
+:document.write("<br>you are not allowed to access the website");
