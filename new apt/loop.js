@@ -9,3 +9,12 @@ for (let i = 0; i < 5; i++) {
 } 
 // this will print "Hello world" 5 times
 // the first part is the start of the loop, the second part is the condition that must be true for the loop to continue, and the third part is the step that will be executed after each iteration
+
+//lets reverse this code 
+
+for (let i = 5; i>0 ;i--) {
+    console.log(i);
+} //this will print 5,4,3,2,1
+
+//i++ means i = i +1 or i+=1 
+//i-- means i = i -1 or i-=1
