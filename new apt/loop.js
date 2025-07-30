@@ -18,3 +18,8 @@ for (let i = 5; i>0 ;i--) {
 
 //i++ means i = i +1 or i+=1 
 //i-- means i = i -1 or i-=1
+
+//another exercise:
+for (let a= 0 ; a<=5 ; a++){
+    console.log("Ahmed" + a)
+}
