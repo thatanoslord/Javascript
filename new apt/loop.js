@@ -38,3 +38,21 @@ names= names.reverse()
 for (let i = 0 ;i <names.length ; i++){
     console.log(names[i]);
 }
+
+//there is also a nested loop which is a loop that contains another loop in it
+let cars = ["Honda", "Toyota", "Ford"];
+let models=["1998", "2003", "2010","2020"];
+let colors = ["Black", "White","Grey", "Dark Blue"]
+
+for (c =0 ; c < cars.length; c++){
+    console.log(`Cars: ${cars[c]}`);
+
+    for (m = 0 ; m < models.length; m++){
+        console.log(`Models: ${models[m]}`)
+    };
+
+    for(d = 0 ; d < colors.length; d++){
+        console.log(`Colors: ${colors[d]}`)
+    };
+    console.log("_______________________________________");
+}
