@@ -21,5 +21,12 @@ for (let i = 5; i>0 ;i--) {
 
 //another exercise:
 for (let a= 0 ; a<=5 ; a++){
-    console.log("Ahmed" + a)
+    console.log("Ahmed " + a)
+}
+// this will print "Ahmed 0", "Ahmed 1", "Ahmed 2", "Ahmed 3", "Ahmed 4", "Ahmed 5"
+
+//lets do the loop on an array
+let names = ["ayoub", "moussa", "ali", "khalid", "salah"];
+for (let i = 0 ;i >names.length ; i++){
+    console.log(names[i]);
 }
