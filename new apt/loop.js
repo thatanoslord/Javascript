@@ -27,6 +27,14 @@ for (let a= 0 ; a<=5 ; a++){
 
 //lets do the loop on an array
 let names = ["ayoub", "moussa", "ali", "khalid", "salah"];
-for (let i = 0 ;i >names.length ; i++){
+for (let i = 0 ;i <names.length ; i++){
+    console.log(names[i]);
+    console.log("_______________________")
+}
+for (let i = names.length-1 ;i <0 ; i--){
+    console.log(names[i]);
+}
+names= names.reverse()
+for (let i = 0 ;i <names.length ; i++){
     console.log(names[i]);
 }
