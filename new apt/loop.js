@@ -48,3 +48,11 @@ for (i=0 ; i < table.length; i++){
  while will create a loop based on condition you give if the the condition is false then the loop won't be created
  but do while will create a loop if the condition is is true and if it is false it will create a loop for one time because we now the js is line by line language*/
 
+// while loop starts by defining the variable out of while then you write while ( condition){then you write what will be shown and the steps}
+let i = 0;
+while(i <3){
+    document.write('<h1>Hello world</h1>')
+    i++;
+}
+
+// do while 
