@@ -43,3 +43,8 @@ for (i=0 ; i < table.length; i++){
 
 }
 //break is used to stop the loop whenever you want but if I want the loop to give me the the value and stop i should put the if "break after"
+
+/* while and do while, all of them are the same as for they are used to create a loop the difference between while and d while is,
+ while will create a loop based on condition you give if the the condition is false then the loop won't be created
+ but do while will create a loop if the condition is is true and if it is false it will create a loop for one time because we now the js is line by line language*/
+
