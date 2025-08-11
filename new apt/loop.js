@@ -17,3 +17,14 @@ for (let i = 0; i < cars.length; i++){
         console.log(color[k])
     }
 }
+
+// now we are going to learn how to continue (eleminate) and break in a loop
+// in order to eliminate or avoid a value in a loop you will use this:
+let table = ["anas", "khalid" , "ali" ,1,2, "muhamed" ,3,4, "ibrahim"]
+for (i=0 ; i < table.length; i++){
+    if (typeof table[i] == "number"){
+        continue; //this won't show the value that has number as its type
+    }
+    console.log(table[i]);
+}
+
