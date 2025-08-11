@@ -1,9 +1,19 @@
 
 
-//another exercise:
-for (let a= 0 ; a<=1000 ; a++){
-    console.log("Ahmed " + a)
+let names = ["ahmed", "ali", "sara", "john", "doe", "jane"]
+for (let i = 0; i < names.length; i++){
+    console.log(names[i])
 }
-// this will print "Ahmed 0", "Ahmed 1", "Ahmed 2", "Ahmed 3", "Ahmed 4", "Ahmed 5"
+let cars = ["BMW", "Mercedes", "Toyota", "Honda", "Ford", "Chevrolet"]
+let model =[1999, 2005, 2009, 2019, 2024 ]
+let color = ["Red", "Blue", "Green", "Black", "White", "Silver"]
 
-//lets do the loop on an array
+for (let i = 0; i < cars.length; i++){
+    console.log(cars[i])
+    for (let j = 0; j < model.length; j++){
+        console.log(model[j])
+    }
+    for (let k = 0; k < color.length; k++){
+        console.log(color[k])
+    }
+}
