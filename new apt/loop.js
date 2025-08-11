@@ -28,3 +28,15 @@ for (i=0 ; i < table.length; i++){
     console.log(table[i]);
 }
 
+
+// now let's see what does break do :
+for (i=0 ; i < table.length; i++){
+    if (typeof table[i] == "number"){
+        continue; //this won't show the value that has number as its type
+    }
+    if (table[i] == "muhamed"){
+        continue; //this will stop before the value of "ali"
+    }
+    console.log(table[i]);
+}
+//break is used to stop the loop whenever you want but if I want the loop to give me the the value and stop i should put the if "break after"
