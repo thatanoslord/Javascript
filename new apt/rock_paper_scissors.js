@@ -3,7 +3,8 @@
 console.log("Welcome to Rock, Paper, Scissors");
 console.log("0 refers to Rock, 1 refers to Paper and 2 refers to Scissors");
 
-let player = prompt("Choose your sign: ");
+let player =  Number(prompt("Choose your sign: "));
+console.log(typeof player)
 let computer = Math.floor(Math.random() * 3);
 
 if (computer == 0 && player == 0) {
