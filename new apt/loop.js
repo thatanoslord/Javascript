@@ -41,7 +41,7 @@ for (i=0 ; i < table.length; i++){
     }
     
 
-}
+}<
 //break is used to stop the loop whenever you want but if I want the loop to give me the the value and stop i should put the if "break after"
 
 /* while and do while, all of them are the same as for they are used to create a loop the difference between while and d while is,
@@ -49,10 +49,17 @@ for (i=0 ; i < table.length; i++){
  but do while will create a loop if the condition is is true and if it is false it will create a loop for one time because we now the js is line by line language*/
 
 // while loop starts by defining the variable out of while then you write while ( condition){then you write what will be shown and the steps}
-let i = 0;
-while(i <3){
+let a = 0;
+while(a < 3){
     document.write('<h1>Hello world</h1>')
-    i++;
-}
+    a++;
 
-// do while 
+}
+console.log("_______________________")
+
+// do while give u one loop even if the condition isn't valide:
+// to create dowhile loop u need also to create a variable then you write do{you will write what is going to be shown}while(condition);
+do{
+    console.log("hello world again")
+    a++;
+}while(a < 3);
