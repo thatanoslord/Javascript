@@ -29,3 +29,12 @@ else if (day === 6 || day === 7){
   console.log("Yay, weekends! 🙌")
 }
 else{console.log("Wait, what day is it?")}
+
+// coin flip 
+let num = Math.random();
+
+if (num > 0.5) {
+  console.log("Heads");
+} else {
+  console.log("Tails");
+}
