@@ -49,3 +49,16 @@ if (year >= 1920 && year <= 1929) {
 } else {
   console.log("Year out of range");
 }
+
+// exercising task:
+let randomNumber = Math.floor(Math.random() * 4);
+
+if (randomNumber === 0) {
+  console.log("10 Push-ups");
+} else if (randomNumber === 1) {
+  console.log("10 Sit-ups");
+} else if (randomNumber === 2) {
+  console.log("10 Squats");
+} else {
+  console.log("10 Jumping Jacks");
+}
