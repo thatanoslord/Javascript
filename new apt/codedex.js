@@ -94,3 +94,26 @@ console.log(`My lucky number is ${guess}`);
 for (i = 0; i < 100; i++ ){
 console.log("I Must Not Tell Lies")
 };
+
+// even and odds continue and break 
+
+for (i=1; i < 50; i++){
+  if (i==1){
+    continue;
+  }
+  if (i==43){
+    break;
+  }
+  console.log(i)
+}
+
+// based numbers 
+// Write code below 💖
+
+let myNumber = 27;
+let binary ="";
+for (myNumber ; myNumber > 0 ; myNumber = Math.floor(myNumber / 2)){
+  let remainder = myNumber % 2;
+  binary = remainder + binary
+}
+console.log("binary: " + binary)
