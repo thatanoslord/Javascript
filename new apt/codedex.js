@@ -62,3 +62,16 @@ if (randomNumber === 0) {
 } else {
   console.log("10 Jumping Jacks");
 }
+/*
+Now we are going to focus on while loop
+
+*/
+
+
+
+while (randomNumber !== 7) {
+  console.log("Duck 🦆");
+  randomNumber = Math.floor(Math.random() * 10);
+}
+
+console.log("Goose! 🦢");
