@@ -67,7 +67,7 @@ Now we are going to focus on while loop
 
 */
 
-
+//goose or duck 
 
 while (randomNumber !== 7) {
   console.log("Duck 🦆");
@@ -75,3 +75,15 @@ while (randomNumber !== 7) {
 }
 
 console.log("Goose! 🦢");
+
+// lucky number
+
+
+const luckyNumber = 7
+
+let guess = Math.floor(Math.random() * 10) + 1;
+while (guess !== luckyNumber){
+  console.log(`Nope, it isn't ${guess}`)
+  guess = Math.floor(Math.random() * 10) + 1
+}
+console.log(`My lucky number is ${guess}`)
