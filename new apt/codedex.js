@@ -86,4 +86,11 @@ while (guess !== luckyNumber){
   console.log(`Nope, it isn't ${guess}`)
   guess = Math.floor(Math.random() * 10) + 1
 }
-console.log(`My lucky number is ${guess}`)
+console.log(`My lucky number is ${guess}`);
+
+// not to tell lies
+
+
+for (i = 0; i < 100; i++ ){
+console.log("I Must Not Tell Lies")
+};
