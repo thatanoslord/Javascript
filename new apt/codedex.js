@@ -117,3 +117,10 @@ for (myNumber ; myNumber > 0 ; myNumber = Math.floor(myNumber / 2)){
   binary = remainder + binary
 }
 console.log("binary: " + binary)
+
+// blast of 
+// Write code below 💖
+for (let i = 10; i > 0; i--) {
+  console.log(i);
+}
+console.log("To infinity and beyond! 🚀");
