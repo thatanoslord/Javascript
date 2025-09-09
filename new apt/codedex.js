@@ -142,3 +142,28 @@ while(count < 10){
   }
 }
 console.log(`The number ${targetNumber} was found 10 times.`)
+
+
+//Odd cube:
+// Write code below 💖
+
+let limit = 5;
+
+let total =0;
+for (let i = 1; i <= limit; i+=2 ){
+  let cube = i ** 3;
+  total = total + cube 
+}
+console.log(total)
+
+//fibonacci 
+// Write code below 💖
+let firstFib = 0;
+let secondFib = 1;
+console.log(firstFib)
+for (let i = 0 ; i < 10; i ++){
+  let nextFib = firstFib + secondFib;
+  console.log(secondFib)
+  firstFib = secondFib;
+  secondFib = nextFib;
+}
