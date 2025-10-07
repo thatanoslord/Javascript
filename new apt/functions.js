@@ -12,5 +12,6 @@
 function final_product(price, tax, ads) {
   let product = price + tax;
   result = product + ads;
+  return result
 }
 console.log(`this is the price of product x: ${final_product(100, 2.5, 10)}`);
