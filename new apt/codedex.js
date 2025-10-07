@@ -161,9 +161,10 @@ console.log(total)
 let firstFib = 0;
 let secondFib = 1;
 console.log(firstFib)
-for (let i = 0 ; i < 10; i ++){
+console.log(secondFibFib)
+for (let i = 2 ; i < 10; i ++){
   let nextFib = firstFib + secondFib;
-  console.log(secondFib)
+  console.log(nextFib)
   firstFib = secondFib;
   secondFib = nextFib;
 }
