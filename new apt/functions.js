@@ -12,5 +12,19 @@
 function final_product(price, tax, ads) {
   let product = price + tax;
   result = product + ads;
+  return result
 }
 console.log(`this is the price of product x: ${final_product(100, 2.5, 10)}`);
+
+
+//return is a function keyword that stores the result of the function we created, 
+//N.B return is the last word we put in the function what comes after it it won't be red by the console
+
+// example
+
+function person(age){
+    let days = age *365;
+    return days
+
+}
+console.log(`your Age in days is: ${person(27)}`)
