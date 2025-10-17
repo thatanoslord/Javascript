@@ -56,3 +56,11 @@ function getLoanMessage(annualIncome, creditScore) {
     return "You don't qualify for any loans."
   }
 }
+
+// Celsius to Fahrenheit
+
+function convertCtoF(celsius){
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+}
+console.log(convertCtoF(15))
