@@ -78,3 +78,17 @@ function isLeapYear(a){
 }
 let result = isLeapYear(year);
 console.log(result)
+
+// Implement the Truncate a String Algorithm
+
+function truncateString(a , b){
+  if (a.length > b){
+    let sentence = a.slice(0,b);
+    let sentence1 = sentence.concat("...")
+    return sentence1;
+  }
+  else{
+    return a;
+  }
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8))
