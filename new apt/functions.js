@@ -64,3 +64,17 @@ function convertCtoF(celsius){
   return fahrenheit;
 }
 console.log(convertCtoF(15))
+
+//CHECK IF THE YEAR IS A LEAP YEAR FUNCTION 
+
+let year = 2024;
+function isLeapYear(a){
+  if( a % 400 ==0 || (a % 4 == 0 && a % 100 !==0 )){
+    return `${a} is a leap year.` 
+  }
+  else {
+    return `${a} is not a leap year.` 
+  }
+}
+let result = isLeapYear(year);
+console.log(result)
