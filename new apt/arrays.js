@@ -69,4 +69,31 @@ return arr
 }
 console.log(removeLastLunch(lunches))
  
- 
+ function removeFirstLunch(arr){
+ let removedItem = arr.shift()
+  if (removedItem){
+    console.log(`${removedItem} removed from the start of the lunch menu.`);
+  }
+  else {
+     console.log("No lunches to remove.");
+  }
+ return arr
+}
+console.log(removeFirstLunch(lunches))
+
+
+//getting random lunch from the menu
+
+
+function getRandomLunch(arr) {
+  if (arr.length === 0) {
+    console.log("No lunches available.");
+    return arr;
+  }
+
+  let randomNumber = Math.floor(Math.random() * arr.length);
+  console.log(`Randomly selected lunch: ${arr[randomNumber]}`);
+  return arr;
+}
+
+getRandomLunch(lunches);
