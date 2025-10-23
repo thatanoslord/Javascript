@@ -92,3 +92,18 @@ function truncateString(a , b){
   }
 }
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8))
+
+// a Confirm ending tool without using endsWith() method
+
+function confirmEnding(a, b){
+  let sentence = a.slice(-b.length)
+  if (sentence ==  b){
+    return true
+  }
+  else{
+    return false
+    } 
+  
+}
+console.log(confirmEnding("Congratulation", "on"))
+
