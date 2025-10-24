@@ -106,14 +106,13 @@ function confirmEnding(a, b){
   
 }
 console.log(confirmEnding("Congratulation", "on"))
-let newArr = ["Burger", "Tacos", "Orange juice"]
-lunches.push(newArr);
+
 // showLunchMenu
 function showLunchMenu(arr){
-if (lunches.includes(arr)){
-  return `"Menu items: ${arr.join(",")}`
+if (arr === 0){
+  return console.log(`Menu items: ${arr.join(", ")}`)
 }
 else{return "The menu is empty." }
 
 }
-console.log(showLunchMenu(lunches))
+console.log(showLunchMenu(arr))
