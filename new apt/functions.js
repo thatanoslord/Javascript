@@ -107,3 +107,7 @@ function confirmEnding(a, b){
 }
 console.log(confirmEnding("Congratulation", "on"))
 
+// showLunchMenu
+function showLunchMenu(arr){
+  
+}
