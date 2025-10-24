@@ -110,5 +110,10 @@ let newArr = ["Burger", "Tacos", "Orange juice"]
 lunches.push(newArr);
 // showLunchMenu
 function showLunchMenu(arr){
-  
+if (lunches.includes(arr)){
+  return `"Menu items: ${arr.join(",")}`
 }
+else{return "The menu is empty." }
+
+}
+console.log(showLunchMenu(lunches))
