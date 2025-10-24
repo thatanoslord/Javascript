@@ -106,7 +106,8 @@ function confirmEnding(a, b){
   
 }
 console.log(confirmEnding("Congratulation", "on"))
-
+let newArr = ["Burger", "Tacos", "Orange juice"]
+lunches.push(newArr);
 // showLunchMenu
 function showLunchMenu(arr){
   
