@@ -116,3 +116,6 @@ else{return "The menu is empty." }
 
 }
 console.log(showLunchMenu(arr))
+
+
+//Golf score translatore
