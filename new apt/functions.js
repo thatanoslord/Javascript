@@ -119,3 +119,30 @@ console.log(showLunchMenu(arr))
 
 
 //Golf score translatore
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(a,b){
+  if (a >=b && b ===1){
+   return names[0]
+  }
+  else if(b<=a-2){
+    return names[1]
+  }
+  else if(a-1 ===b ){
+    return names[2]
+  }
+  else if(a === b  && a >= 3){
+    return names[3]
+  }
+  else if(a - b ===-1 && a >= 3 ){
+    return names[4]
+  }
+  else if(a - b ===-2 && a >= 3 ){
+    return names[5]
+  }
+  else if(a - b ===-4 && a >= 3 ){
+    return names[6]
+  }
+ 
+}
+console.log(golfScore(3,2))
