@@ -146,3 +146,16 @@ function golfScore(a,b){
  
 }
 console.log(golfScore(3,2))
+
+//what is an object and jason in JS
+//object is a data structure that can store multiple values in terms of key value pairs
+// jason is a data format that is used to store and exchange data
+// how to create an object
+//syntax
+// let object_name = {key1: value1, key2: value2, key3: value3}
+// example
+let person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
