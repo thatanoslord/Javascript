@@ -250,3 +250,59 @@ recipe3.totalIngredients = getTotalIngredients(recipe3.ingredients)
 recipe3.difficultyLevel = getDifficultyLevel(recipe3.cookingTime)
 
 console.log(recipes)
+
+
+// getting random answer for question using function and objects 
+
+
+
+let questions =[{
+  category: "country",
+  question: "If you could live in any country for a year, which one would you choose and why?",
+  choices: ["Japan", "France", "USA"],
+  answer: "Japan"}, {
+  category: "inventions",
+  question: "What invention do you think changed the world the most?",
+  choices: ["phones", "internet", "cars"],
+  answer: "internet"}, {
+  category: "animals",
+  question: "If animals could talk, which one do you think would be the funniest to have a conversation with?",
+  choices: ["monkies", "cats", "possom"],
+  answer: "cats"}, {
+  category: "space or ocean",
+  question: "Would you rather explore outer space or the deep ocean?",
+  choices: ["ocean", "space", "land"],
+  answer: "space"}, {
+  category: "skills",
+  question: "What’s one skill you wish you could instantly master?",
+  choices: ["focusing", "learning", "breathing"],
+  answer: "focusing"}];
+
+           
+function getRandomQuestion(arrquest){
+  let randomQuest = arrquest[Math.floor(Math.random()*arrquest.length)]
+  return randomQuest;
+}
+
+let randomQuest = getRandomQuestion(questions)
+let choice = randomQuest.choices
+console.log(randomQuest)
+console.log("==============================")
+
+
+function getRandomComputerChoice(arrChoice){
+  return arrChoice[Math.floor(Math.random()*arrChoice.length)]
+}
+console.log(getRandomComputerChoice(choice))
+console.log("==============================")
+
+function getResults(quest, compAnswer){
+  if(quest.answer === compAnswer){
+    return "The computer's choice is correct!"
+  }
+  else{return `The computer's choice is wrong. The correct answer is: ${quest.answer}` }
+}
+
+console.log(getResults(randomQuest, getRandomComputerChoice(choice)))  
+
+   
