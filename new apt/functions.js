@@ -345,3 +345,31 @@ function updateRecords (records, id, prop, value){
     return records
   }
 } 
+
+// a sentence analyzer that will take a sentence and get the count for the number of words, vowels,
+ function getVowelCount(sentence){
+  let number = 0;
+  for (let letter of sentence.toLowerCase()){
+    if( letter === "a"|| letter === "e"|| letter === "u"|| letter === "i"|| letter === "o"){
+      number++
+    }
+  }
+  return number;
+}
+console.log(getVowelCount("Apples are tasty fruits"))
+
+
+function getConsonantCount(sentence) {
+  const consonants = "bcdfghjklmnpqrstvwxyz";
+  let count = 0;
+
+  for (const char of sentence.toLowerCase()) {
+    if (consonants.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const consonantCount = getConsonantCount("Coding is fun");
+console.log(`Consonant Count: ${consonantCount}`);
