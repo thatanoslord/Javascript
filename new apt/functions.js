@@ -357,7 +357,8 @@ function updateRecords (records, id, prop, value){
   return number;
 }
 console.log(getVowelCount("Apples are tasty fruits"))
-
+const vowelCount = getVowelCount("Apples are tasty fruits");
+console.log(`Vowel Count: ${vowelCount}`);
 
 function getConsonantCount(sentence) {
   const consonants = "bcdfghjklmnpqrstvwxyz";
