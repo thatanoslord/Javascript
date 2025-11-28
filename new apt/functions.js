@@ -346,17 +346,19 @@ function updateRecords (records, id, prop, value){
   }
 } 
 
-// a sentence analyzer that will take a sentence and get the count for the number of words, vowels,
- function getVowelCount(sentence){
-  let number = 0;
-  for (let letter of sentence.toLowerCase()){
-    if( letter === "a"|| letter === "e"|| letter === "u"|| letter === "i"|| letter === "o"){
-      number++
+// a sentence analyzer that will take a sentence and get the count for the number of words, vowels, consonants, and punctuation marks in the sentence.
+ function getVowelCount(sentence) {
+  const vowels = "aeiou";
+  let count = 0;
+
+  for (const char of sentence.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
     }
   }
-  return number;
+  return count;
 }
-console.log(getVowelCount("Apples are tasty fruits"))
+
 const vowelCount = getVowelCount("Apples are tasty fruits");
 console.log(`Vowel Count: ${vowelCount}`);
 
@@ -387,5 +389,17 @@ function getPunctuationCount(sentence) {
   return count;
 }
 
-let punctuationCount = getPunctuationCount("WHAT?!?!?!?!?");
-console.log(`Punctuation Count: ${punctuationCount}`)
+const punctuationCount = getPunctuationCount("WHAT?!?!?!?!?");
+console.log(`Punctuation Count: ${punctuationCount}`);
+
+function getWordCount(sentence) {
+  if (sentence.trim() === '') {
+    return 0;
+  }
+  
+  const words = sentence.trim().split(/\s+/);
+  return words.length;
+}
+
+let wordCount =  getWordCount("I love freeCodeCamp");
+console.log(`Word Count: ${wordCount}`)
